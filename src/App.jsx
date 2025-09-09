@@ -1,13 +1,12 @@
 import React from 'react'
-import Homepage from './components/Homepage.jsx.'
+import Homepage from './components/homepage'
 
-function App () 
-{
-  return 
+function App() {
+  return (
     <>
-     <Homepage/>
+      <Homepage />
     </>
-  
+  )
 }
 
 export default App
