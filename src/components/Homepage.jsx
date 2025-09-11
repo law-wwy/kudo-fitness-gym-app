@@ -68,39 +68,7 @@ export default function Homepage() {
           </div>
         </div>
 
-        {/* INFORMATION PAGE */}
-        <div id="information" className="information-page">
-          <div className="info-card">
-            <div className="info-text">
-              <h2>Visit Our Gym</h2>
-              <p>
-                <strong>Location:</strong>
-                <br />
-                Barangay Uno Gasan Marinduque, Bonifacio Street Poblacion
-              </p>
-
-              <p>
-                <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM <br />
-                <strong>Saturday - Sunday:</strong> 10:00 AM - 4:00 PM
-              </p>
-
-              <p>
-                <strong>Email:</strong>{" "}
-                <span className="highlight-box">kudofitnessgym@gmail.com</span>
-              </p>
-              <p>
-                <strong>Phone:</strong>{" "}
-                <span className="highlight-box">09672534800</span>
-              </p>
-            </div>
-
-            <div className="info-map">
-              <img src={location} alt="Gym Location Map" />
-            </div>
-          </div>
-        </div>
-
-        {/* PLAN PAGE */}
+        {/* PLAN PAGE (moved before Information Page) */}
         <div id="plan" className="plan-page">
           <div className="plans-container">
             {/* Weekly Plan */}
@@ -143,6 +111,38 @@ export default function Homepage() {
                 <li>Benefit 4</li>
               </ul>
               <button className="plan-btn">Get Started</button>
+            </div>
+          </div>
+        </div>
+
+        {/* INFORMATION PAGE (moved after Plan Page) */}
+        <div id="information" className="information-page">
+          <div className="info-card">
+            <div className="info-text">
+              <h2>Visit Our Gym</h2>
+              <p>
+                <strong>Location:</strong>
+                <br />
+                Barangay Uno Gasan Marinduque, Bonifacio Street Poblacion
+              </p>
+
+              <p>
+                <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM <br />
+                <strong>Saturday - Sunday:</strong> 10:00 AM - 4:00 PM
+              </p>
+
+              <p>
+                <strong>Email:</strong>{" "}
+                <span className="highlight-box">kudofitnessgym@gmail.com</span>
+              </p>
+              <p>
+                <strong>Phone:</strong>{" "}
+                <span className="highlight-box">09672534800</span>
+              </p>
+            </div>
+
+            <div className="info-map">
+              <img src={location} alt="Gym Location Map" />
             </div>
           </div>
         </div>
