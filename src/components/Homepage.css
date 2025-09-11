@@ -1,3 +1,8 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,10 +17,10 @@
 .homepage {
   margin: 0;
   padding: 0;
-  height: 450vh;
   width: 100vw;
   overflow-x: hidden;
 }
+
 /* LANDING PAGE */
 .landing-page {
   height: 100vh;
@@ -25,15 +30,15 @@
 
 .navbar {
   width: 100%;
-  position: fixed; /* makes it pinned */
+  position: fixed; /* Pinned navbar */
   top: 0;
   left: 0;
-  z-index: 1000; /* keeps it above other content */
+  z-index: 1000;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 10px 20px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -48,49 +53,47 @@
   gap: 30px;
 }
 
-.navbar ul li {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.navbar ul li a {
+  text-decoration: none;
   font-weight: bold;
   color: #7c4141;
-  cursor: pointer;
-  list-style: none;
-  background: transparent;
+  transition: color 0.3s ease;
 }
+
+.navbar ul li a:hover {
+  color: #f5b700;
+}
+
 .hero {
-  max-width: 500px; /* a bit wider */
-  margin: 100px auto 0; /* push it down like in the image */
+  max-width: 500px;
+  margin: 120px auto 0; /* push down to avoid navbar overlap */
   text-align: left;
 }
 
-/* Main Heading */
 .hero h1 {
   font-weight: 900;
-  font-size: 4rem; /* bigger text */
+  font-size: 4rem;
   line-height: 1.1;
   margin-bottom: 25px;
   font-family: "Arial Black", Arial, sans-serif;
-  color: #111; /* deep black */
+  color: #111;
 }
 
-/* Tagline */
 .hero p {
   font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: 30px;
-  color: #333; /* darker gray */
+  color: #333;
 }
 
-/* Highlighted words */
 .hero .highlight {
-  color: #f5b700; /* yellow (FIT) */
+  color: #f5b700;
   font-weight: 900;
 }
 .hero .highlight:last-child {
-  color: #e53935; /* red (QUIT) */
+  color: #e53935;
 }
 
-/* EMAIL FORM */
 .email-form {
   display: flex;
   gap: 10px;
@@ -126,7 +129,6 @@
   transform: translateY(-2px);
 }
 
-/* Subtext below form */
 .subtext {
   font-size: 0.85rem;
   font-weight: 500;
@@ -138,19 +140,17 @@
 .description-page {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   background: url("../assets/background_desc.png") no-repeat left center/cover;
-  min-height: 100vh;
   padding: 50px;
   color: #333;
 }
 
 .description-content {
   max-width: 600px;
-  background: rgba(255, 255, 255, 0.8); /* light overlay for readability */
+  background: rgba(255, 255, 255, 0.8);
   padding: 40px;
   border-radius: 10px;
 }
@@ -161,12 +161,9 @@
   margin-bottom: 20px;
 }
 
-.description-content .men {
-  color: #f3a100; /* highlight men */
-}
-
+.description-content .men,
 .description-content .women {
-  color: #f3a100; /* highlight women */
+  color: #f3a100;
 }
 
 .description-content p {
@@ -175,10 +172,10 @@
   text-align: justify;
 }
 
+/* INFORMATION PAGE */
 .information-page {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,25 +201,6 @@
   color: #000;
 }
 
-.info-text h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.info-text p {
-  font-size: 1rem;
-  margin: 10px 0;
-}
-
-.highlight-box {
-  background: #f3a100;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-family: monospace;
-  border: 1.5px solid #000;
-}
-
 .info-map {
   flex: 1;
   display: flex;
@@ -235,10 +213,20 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
   border: 2px solid #000;
 }
+
+.highlight-box {
+  background: #f3a100;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  border: 1.5px solid #000;
+}
+
+/* PLAN PAGE */
 .plan-page {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
+  display: flex;
   justify-content: center;
   align-items: center;
   background: #f8f8f8;
@@ -288,7 +276,7 @@
   list-style: none;
   padding: 0;
   margin: 20px 0;
-  color: #ddd;
+  color: #333;
   font-size: 0.9rem;
   text-align: left;
 }

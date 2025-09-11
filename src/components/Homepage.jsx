@@ -10,14 +10,22 @@ export default function Homepage() {
     <>
       <div className="homepage">
         {/* LANDING PAGE */}
-        <div className="landing-page">
+        <div id="landing" className="landing-page">
           <div className="navbar">
             <img src={logo} alt="" className="logo" />
             <ul>
-              <li>Visit Our Gym</li>
-              <li>About</li>
-              <li>Plan</li>
-              <li>Login</li>
+              <li>
+                <a href="#information">Visit Our Gym</a>
+              </li>
+              <li>
+                <a href="#description">About</a>
+              </li>
+              <li>
+                <a href="#plan">Plan</a>
+              </li>
+              <li>
+                <a href="#landing">Login</a>
+              </li>
             </ul>
             <img src={logo_light} alt="" className="toggle-icon" />
           </div>
@@ -42,7 +50,7 @@ export default function Homepage() {
         </div>
 
         {/* DESCRIPTION PAGE */}
-        <div className="description-page">
+        <div id="description" className="description-page">
           <div className="description-content">
             <h2>
               Fitness Gym for <span className="men">Men</span> and{" "}
@@ -61,8 +69,7 @@ export default function Homepage() {
         </div>
 
         {/* INFORMATION PAGE */}
-        <div className="information-page">
-          {" "}
+        <div id="information" className="information-page">
           <div className="info-card">
             <div className="info-text">
               <h2>Visit Our Gym</h2>
@@ -94,8 +101,7 @@ export default function Homepage() {
         </div>
 
         {/* PLAN PAGE */}
-        <div className="plan-page">
-          {" "}
+        <div id="plan" className="plan-page">
           <div className="plans-container">
             {/* Weekly Plan */}
             <div className="plan-card">
