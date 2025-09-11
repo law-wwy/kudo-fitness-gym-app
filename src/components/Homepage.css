@@ -6,8 +6,9 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
   list-style-type: none;
-  color: #181818;
+  color: #000000;
 }
+
 .homepage {
   margin: 0;
   padding: 0;
@@ -21,24 +22,32 @@
   width: 100vw;
   overflow-x: hidden;
 }
+
 .navbar {
   width: 100%;
+  position: fixed; /* makes it pinned */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* keeps it above other content */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px; /* Add some padding for spacing */
-  background-color: #fff; /* Optional: background for better visibility */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: light shadow */
+  padding: 0 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .navbar .logo {
   height: 60px;
   object-fit: contain;
 }
+
 .navbar ul {
   display: flex;
   gap: 30px;
 }
+
 .navbar ul li {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -48,20 +57,258 @@
   list-style: none;
   background: transparent;
 }
+.hero {
+  max-width: 500px; /* a bit wider */
+  margin: 100px auto 0; /* push it down like in the image */
+  text-align: left;
+}
+
+/* Main Heading */
+.hero h1 {
+  font-weight: 900;
+  font-size: 4rem; /* bigger text */
+  line-height: 1.1;
+  margin-bottom: 25px;
+  font-family: "Arial Black", Arial, sans-serif;
+  color: #111; /* deep black */
+}
+
+/* Tagline */
+.hero p {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #333; /* darker gray */
+}
+
+/* Highlighted words */
+.hero .highlight {
+  color: #f5b700; /* yellow (FIT) */
+  font-weight: 900;
+}
+.hero .highlight:last-child {
+  color: #e53935; /* red (QUIT) */
+}
+
+/* EMAIL FORM */
+.email-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.email-form input {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 0.9rem;
+  background-color: #f5b700;
+  color: #000;
+  font-weight: 700;
+  width: 200px;
+}
+
+.email-form button {
+  padding: 12px 30px;
+  background-color: #f5b700;
+  border: none;
+  border-radius: 25px;
+  color: #000;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.email-form button:hover {
+  background-color: #d4a200;
+  transform: translateY(-2px);
+}
+
+/* Subtext below form */
+.subtext {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #444;
+  margin-top: 8px;
+}
 
 /* DESCRIPTION PAGE */
 .description-page {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: url("../assets/background_desc.png") no-repeat left center/cover;
+  min-height: 100vh;
+  padding: 50px;
+  color: #333;
 }
+
+.description-content {
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.8); /* light overlay for readability */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.description-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description-content .men {
+  color: #f3a100; /* highlight men */
+}
+
+.description-content .women {
+  color: #f3a100; /* highlight women */
+}
+
+.description-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
 .information-page {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: #f8f8f8;
+}
+
+.info-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(55, 36, 36, 0.15);
+  max-width: 900px;
+  width: 100%;
+  border: 2px solid #000;
+}
+
+.info-text {
+  flex: 1;
+  color: #000;
+}
+
+.info-text h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.info-text p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.highlight-box {
+  background: #f3a100;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  border: 1.5px solid #000;
+}
+
+.info-map {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.info-map img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  border: 2px solid #000;
 }
 .plan-page {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 40px;
+}
+
+.plans-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan-card {
+  background: #f8f8f8;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+}
+
+.plan-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.plan-card .student {
+  font-size: 1rem;
+  color: #f5b700;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f5b700;
+  margin: 15px 0;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  color: #ddd;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.plan-card ul li {
+  margin: 8px 0;
+}
+
+.plan-btn {
+  padding: 12px 20px;
+  background-color: #f5b700;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.plan-btn:hover {
+  background-color: #d49d00;
 }
