@@ -1,9 +1,9 @@
-*{
-    margin: 10;
-    padding: 20;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    color: rgb(255, 247, 0);
+* {
+  margin: 10;
+  padding: 20;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: rgb(#24197a);
 }
 
 .container {
