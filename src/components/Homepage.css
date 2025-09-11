@@ -32,21 +32,21 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: light shadow */
 }
 .navbar .logo {
-  height: 60px; /* Adjust logo size to fit navbar height */
+  height: 60px;
   object-fit: contain;
 }
 .navbar ul {
-  display: flex; /* Make menu horizontal */
-  gap: 30px; /* Space between menu items */
+  display: flex;
+  gap: 30px;
 }
 .navbar ul li {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
   color: #7c4141;
-  cursor: pointer; /* Change cursor to pointer for UX */
-  list-style: none; /* Remove any bullet */
-  background: transparent; /* Remove background */
+  cursor: pointer;
+  list-style: none;
+  background: transparent;
 }
 
 /* DESCRIPTION PAGE */
