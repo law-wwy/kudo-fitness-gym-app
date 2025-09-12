@@ -4,11 +4,12 @@ import logo from "../assets/KudoLogo.png";
 import logo_light from "../assets/light_mode.png";
 import logo_dark from "../assets/dark_mode.png";
 import location from "../assets/location.png";
+import "../style.css";
 
 export default function Homepage() {
   return (
     <>
-      <div className="homepage">
+      <div className="homepage bg-black">
         {/* LANDING PAGE */}
         <div id="landing" className="landing-page">
           <div className="navbar">
