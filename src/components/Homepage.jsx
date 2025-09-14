@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./homepage.css";
 import logo from "../assets/KudoLogo.png";
 import logo_light from "../assets/light_mode.png";
 import logo_dark from "../assets/dark_mode.png";
 import location from "../assets/location.png";
+import Signup from "./Signup.jsx";
 // import "../style.css";
 
 export default function Homepage() {
+  const [openSignup, setOpenSignup] = useState(false);
+  useEffect(() => {
+    console.log(openSignup);
+  }, [openSignup]);
   return (
     <>
       <div className="homepage bg-black">
@@ -41,8 +46,16 @@ export default function Homepage() {
               <span className="highlight">QUIT</span>
             </p>
             <form className="email-form">
-              <input type="email" placeholder="EMAIL" required />
-              <button type="submit">Get Started</button>
+              <input type="email" placeholder="EMAIL" />
+              <button
+                type="submit"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpenSignup(true);
+                }}
+              >
+                Get Started
+              </button>
             </form>
             <p className="subtext">
               Enter your email to create or register a new membership!
