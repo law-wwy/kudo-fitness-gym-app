@@ -4,7 +4,7 @@ import logo from "../assets/KudoLogo.png";
 import logo_light from "../assets/light_mode.png";
 import logo_dark from "../assets/dark_mode.png";
 import location from "../assets/location.png";
-import "../style.css";
+// import "../style.css";
 
 export default function Homepage() {
   return (
