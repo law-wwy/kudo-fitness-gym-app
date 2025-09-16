@@ -5,6 +5,8 @@ import logo_light from "../assets/light_mode.png";
 import logo_dark from "../assets/dark_mode.png";
 import location from "../assets/location.png";
 import Signup from "./Signup.jsx";
+import Login from "./Login.jsx";
+import Footer from "./Footer.jsx";
 // import "../style.css";
 
 export default function Homepage() {
@@ -71,18 +73,15 @@ export default function Homepage() {
               <span className="women">Women</span>
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              auctor, sapien a scelerisque tincidunt, velit eros placerat purus,
-              et tristique libero ligula vel erat. Donec ac turpis ac justo
-              ultrices ultrices. Nam in augue ut libero ullamcorper dapibus.
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia curae; Integer et est non ligula cursus faucibus.
-              Aenean eget tincidunt libero.
+              Welcome to our fitness community where strength meets motivation.
+              Whether you’re here to build muscle, improve endurance, or simply
+              stay active, we provide the perfect space and guidance for your
+              journey.
             </p>
           </div>
         </div>
 
-        {/* PLAN PAGE (moved before Information Page) */}
+        {/* PLAN PAGE */}
         <div id="plan" className="plan-page">
           <div className="plans-container">
             {/* Weekly Plan */}
@@ -129,7 +128,7 @@ export default function Homepage() {
           </div>
         </div>
 
-        {/* INFORMATION PAGE (moved after Plan Page) */}
+        {/* INFORMATION PAGE  */}
         <div id="information" className="information-page">
           <div className="info-card">
             <div className="info-text">
@@ -161,6 +160,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+      <footer />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./Login.css"; // import styles
-import logo from "../assets/KudoLogo.png"; // replace with your actual logo path
+import "./Login.css";
+import logo from "../assets/KudoLogo.png";
 
 export default function Login({ onLogin }) {
   const [email, setEmail] = useState("");

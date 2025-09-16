@@ -1,17 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import Homepage from "./components/homepage";
 import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 function App() {
-  const [showLogin, setShowLogin] = useState(false);
-
   return (
     <div className="container">
-      {showLogin ? (
-        <Login onLogin={() => alert("You are logged in!")} />
-      ) : (
-        <Homepage onStart={() => setShowLogin(true)} />
-      )}
+      <Homepage />
     </div>
   );
 }

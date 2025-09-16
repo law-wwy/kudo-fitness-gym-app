@@ -172,56 +172,6 @@ html {
   text-align: justify;
 }
 
-/* INFORMATION PAGE */
-.information-page {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  background: #f8f8f8;
-}
-
-.info-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #f8f8f8;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(55, 36, 36, 0.15);
-  max-width: 900px;
-  width: 100%;
-  border: 2px solid #000;
-}
-
-.info-text {
-  flex: 1;
-  color: #000;
-}
-
-.info-map {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.info-map img {
-  max-width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-  border: 2px solid #000;
-}
-
-.highlight-box {
-  background: #f3a100;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-family: monospace;
-  border: 1.5px solid #000;
-}
-
 /* PLAN PAGE */
 .plan-page {
   height: 100vh;
@@ -299,4 +249,46 @@ html {
 
 .plan-btn:hover {
   background-color: #d49d00;
+}
+/* INFORMATION PAGE */
+.information-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: #f8f8f8;
+}
+
+.info-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(55, 36, 36, 0.15);
+  max-width: 900px;
+  width: 100%;
+  border: 2px solid #000;
+}
+
+.info-text {
+  flex: 1;
+  color: #000;
+}
+
+.info-map {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.highlight-box {
+  background: #f3a100;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  border: 1.5px solid #000;
 }
