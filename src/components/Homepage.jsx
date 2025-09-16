@@ -50,7 +50,7 @@ export default function Homepage() {
               <button
                 type="submit"
                 onClick={(e) => {
-                  e.preventDefault();
+                  e.preventDe;
                   setOpenSignup(true);
                 }}
               >
